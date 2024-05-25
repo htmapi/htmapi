@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://www.npmjs.com/package/htmapi">
-        <img width="200" height="200" src="https://github.com/Camplejs/media/blob/main/logo_transparent.png" alt="cample" >
+        <img width="200" height="200" src="https://github.com/htmapi/media/blob/main/logo_transparent.png" alt="cample" >
     </a>
 </p>
 <h1 align="center">htmapi - work with server-side HTML with ease</h1>
@@ -27,7 +27,7 @@ htmapi is a small library for working with server-side html. It is based on requ
 ```html
 <div>
   <template
-    data-cample
+    data-htmapi
     data-src="/api/test"
     data-method="get"
   ></template>
@@ -55,8 +55,8 @@ htmapi is a small library for working with server-side html. It is based on requ
 ## Example #2
 
 ```javascript
-const templateFn = CampleHTML.createTemplate(
-  `<template data-cample data-src="/api/test" data-method="get"></template>`
+const templateFn = Htmapi.createTemplate(
+  `<template data-htmapi data-src="/api/test" data-method="get"></template>`
 );
 
 // (After the response arrives from the server) { element = template (HTMLTemplateElement type), status = 200 }
@@ -138,15 +138,15 @@ After installation using any convenient method described in [Installation](/?id=
 
 ```html
 <div>
-  <template data-cample data-src="/api/test" data-method="get"></template>
+  <template data-htmapi data-src="/api/test" data-method="get"></template>
 </div>
 ```
 
-Or, if the html method is not suitable, then in htmapi there is a `CampleHTML` object that provides a list of functions and methods that allow you to conveniently work with the server. Usage example:
+Or, if the html method is not suitable, then in htmapi there is a `Htmapi` object that provides a list of functions and methods that allow you to conveniently work with the server. Usage example:
 
 ```javascript
-const templateFn = CampleHTML.createTemplate(
-  `<template data-cample data-src="/api/test" data-method="get"></template>`
+const templateFn = Htmapi.createTemplate(
+  `<template data-htmapi data-src="/api/test" data-method="get"></template>`
 );
 
 // (After the response arrives from the server) { element = template (HTMLTemplateElement type), status = 200 }
